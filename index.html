@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe Social Network</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<i class="fa-solid fa-utensils"></i>
+RecipeNet
+</div>
+
+<input type="text" id="search"
+placeholder="Search recipes...">
+
+<div class="profile">
+<img src="https://i.pravatar.cc/50" alt="">
+<span>Edwin</span>
+</div>
+
+</header>
+
+<div class="container">
+
+<aside class="left">
+
+<h2>Menu</h2>
+
+<ul>
+
+<li><i class="fa-solid fa-house"></i> Home</li>
+
+<li><i class="fa-solid fa-fire"></i> Trending</li>
+
+<li><i class="fa-solid fa-heart"></i> Favorites</li>
+
+<li><i class="fa-solid fa-user-group"></i> Community</li>
+
+<li><i class="fa-solid fa-gear"></i> Settings</li>
+
+</ul>
+
+</aside>
+
+<main>
+
+<div class="post-box">
+
+<h2>Share Your Recipe</h2>
+
+<input type="text"
+id="recipeTitle"
+placeholder="Recipe Name">
+
+<textarea
+id="recipeDesc"
+placeholder="Write your recipe..."></textarea>
+
+<button onclick="addRecipe()">
+Post Recipe
+</button>
+
+</div>
+
+<div id="feed">
+
+<div class="card">
+
+<div class="user">
+
+<img src="https://i.pravatar.cc/100?img=5">
+
+<div>
+
+<h3>Chef Maria</h3>
+
+<p>30 mins • Italian</p>
+
+</div>
+
+</div>
+
+<img class="recipe-img"
+src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800">
+
+<h2>Healthy Pasta Salad</h2>
+
+<p>
+
+Fresh vegetables mixed with delicious pasta and herbs.
+
+</p>
+
+<div class="actions">
+
+<button onclick="like(this)">
+❤️ Like
+</button>
+
+<button onclick="comment(this)">
+💬 Comment
+</button>
+
+</div>
+
+<p class="likes">0 Likes</p>
+
+</div>
+
+</div>
+
+</main>
+
+<aside class="right">
+
+<h2>Trending Recipes</h2>
+
+<ul>
+
+<li>🍕 Pizza</li>
+
+<li>🍔 Burger</li>
+
+<li>🥗 Salad</li>
+
+<li>🍜 Noodles</li>
+
+<li>🥘 Biryani</li>
+
+</ul>
+
+<h2>Top Chefs</h2>
+
+<div class="chef">
+
+<img src="https://i.pravatar.cc/60?img=12">
+
+<span>Chef John</span>
+
+</div>
+
+<div class="chef">
+
+<img src="https://i.pravatar.cc/60?img=22">
+
+<span>Chef Emma</span>
+
+</div>
+
+<div class="chef">
+
+<img src="https://i.pravatar.cc/60?img=32">
+
+<span>Chef Alex</span>
+
+</div>
+
+</aside>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
